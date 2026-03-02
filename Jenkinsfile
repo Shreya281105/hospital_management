@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Shreya281105/hospital_management.git'
+                // Explicitly specify branch main
+                git branch: 'main', url: 'https://github.com/Shreya281105/hospital_management.git'
             }
         }
 
